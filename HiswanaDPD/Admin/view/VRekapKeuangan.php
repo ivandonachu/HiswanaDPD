@@ -229,10 +229,16 @@ if ($tanggal_awal == $tanggal_akhir) {
                                         <?php echo " <a style='font-size: 12px'> Data yang tampil  $tanggal_awal  sampai  $tanggal_akhir</a>" ?>
                                     </div>
                                     <div class="col-md-6">
-                                        <!-- Button Input Data Bayar -->
+                
+                                        <!-- Button Input Data keuangan dan print  -->
                                         <div align="right">
+                                       
+                                       <?php echo "<a href='VCetakKuangan?tanggal1=$tanggal_awal&tanggal2=$tanggal_akhir' target='_blank'><button style='color:black;
+                                             '  type='submit' class=' btn btn-secondary' >  <i class='fa-solid fa-print'></i>Cetak Rekap Keuangan</button></a>"; ?>
+
                                             <button style="font-size: clamp(7px, 3vw, 15px); " type="button" class="btn btn-primary" data-toggle="modal" data-target="#input"> <i class="fas fa-plus-square mr-2"></i>Catat Keuangan</button> <br> <br>
                                         </div>
+
                                         <!-- Form Modal  -->
                                         <div class="modal fade bd-example-modal-lg" id="input" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-lg" role="document">
@@ -357,12 +363,11 @@ if ($tanggal_awal == $tanggal_akhir) {
                                                 $iuran_Anggota = $data['iuran_anggota'];
                                                 $status_keuangan = $data['status_keuangan'];
                                                 $jumlah = $data['jumlah'];
-                                                
+
                                                 if ($status_keuangan == 'Masuk') {
                                                     $total_debit = $total_debit + $jumlah;
                                                 } elseif ($status_keuangan == 'Keluar') {
                                                     $total_kredit = $total_kredit + $jumlah;
-                                                
                                                 }
                                                 $keterangan = $data['keterangan'];
                                                 $file_bukti = $data['file_bukti'];
@@ -375,24 +380,22 @@ if ($tanggal_awal == $tanggal_akhir) {
                                                 <td style='font-size: clamp(12px, 1vw, 12px); color: black;' >$iuran_Anggota</td>";
 
                                                 if ($status_keuangan == 'Masuk') {
-                                                        echo "
-                                                        <td style='font-size: 14px'>"?>  <?= formatuang($jumlah); ?> <?php echo "</td>";
-                                                    }
-                                                    else{
-                                                        echo "
-                                                        <td style='font-size: 14px'>"?>  <?php echo "</td>";
-                                                    }
+                                                    echo "
+                                                        <td style='font-size: 14px'>" ?> <?= formatuang($jumlah); ?> <?php echo "</td>";
+                                                                                                                } else {
+                                                                                                                    echo "
+                                                        <td style='font-size: 14px'>" ?> <?php echo "</td>";
+                                                                                                                }
 
-                                                    if ($status_keuangan == 'Keluar') {
-                                                        echo "
-                                                        <td style='font-size: 14px'>"?>  <?= formatuang($jumlah); ?> <?php echo "</td>";
-                                                    }
-                                                    else{
-                                                        echo "
-                                                        <td style='font-size: 14px'>"?>  <?php echo "</td>";
-                                                    }
-                                                    ?>
-                                                    <?php echo "
+                                                                                                                if ($status_keuangan == 'Keluar') {
+                                                                                                                    echo "
+                                                        <td style='font-size: 14px'>" ?> <?= formatuang($jumlah); ?> <?php echo "</td>";
+                                                                                                                } else {
+                                                                                                                    echo "
+                                                        <td style='font-size: 14px'>" ?> <?php echo "</td>";
+                                                                                                                }
+                                                                                        ?>
+                                                <?php echo "
                                                 
                                                 <td style='font-size: clamp(12px, 1vw, 15px); color: black;' >"; ?> <?= formatuang($total_debit - $total_kredit); ?> <?php echo "</td>
                                                 <td style='font-size: clamp(12px, 1vw, 12px); color: black;' >$keterangan</td>
@@ -451,15 +454,15 @@ if ($tanggal_awal == $tanggal_akhir) {
                                                                                     <?php
                                                                                     $dataSelect = $data['iuran_anggota']; ?>
                                                                                     <option <?php echo ($dataSelect == '') ? "selected" : "" ?>></option> <?php
-                                                                                        $result = mysqli_query($koneksi, "SELECT nama_anggota FROM anggota ");
-                                                                                        while ($data2 = mysqli_fetch_array($result)) {
-                                                                                            $nama_anggota = $data2['nama_anggota'];
+                                                                                                                                                            $result = mysqli_query($koneksi, "SELECT nama_anggota FROM anggota ");
+                                                                                                                                                            while ($data2 = mysqli_fetch_array($result)) {
+                                                                                                                                                                $nama_anggota = $data2['nama_anggota'];
 
 
-                                                                                            echo "<option" ?> <?php echo ($dataSelect == $nama_anggota) ? "selected" : "" ?>> <?php echo $nama_anggota; ?> <?php echo "</option>";
+                                                                                                                                                                echo "<option" ?> <?php echo ($dataSelect == $nama_anggota) ? "selected" : "" ?>> <?php echo $nama_anggota; ?> <?php echo "</option>";
                                                                                                                                                                                                         }
 
-                                                                                                                                                                                                                                                                                            ?>
+                                                                                                                                                                                                            ?>
                                                                                 </select>
                                                                             </div>
                                                                             <div class="col-md-6">
