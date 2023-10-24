@@ -83,23 +83,14 @@ function formattanggal($date){
 <head>
 
     
-    <!-- Custom fonts for this template-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+    <!-- Custom fonts for this template-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-select/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="/css/dataTables.bootstrap4.min.css">
 
-     <!-- Link Tabel -->
-     
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
-    
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/bootstrap-select/dist/css/bootstrap-select.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -386,12 +377,12 @@ function formattanggal($date){
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor_sb/jquery/jquery.min.js"></script>
+    <script src="/vendor_sb/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/sbadmin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/sbadmin/vendor_sb/bootstrap/js/bootstrap.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor_sb/jquery-easing/jquery.easing.min.js"></script>
     <script src="/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="/js/sb-admin-2.min.js"></script>
