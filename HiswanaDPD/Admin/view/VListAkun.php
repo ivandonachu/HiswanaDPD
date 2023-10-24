@@ -423,13 +423,12 @@ $table = mysqli_query($koneksi, "SELECT * FROM account");
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/js//jquery.min.js"></script>
+    <script src="/vendor_sb/jquery/jquery.min.js"></script>
+    <script src="/vendor_sb/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor_sb/bootstrap/js/bootstrap.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor_sb/jquery-easing/jquery.easing.min.js"></script>
     <script src="/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="/js/sb-admin-2.min.js"></script>

@@ -380,7 +380,7 @@ function formattanggal($date){
     <script src="/vendor_sb/jquery/jquery.min.js"></script>
     <script src="/vendor_sb/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/sbadmin/vendor_sb/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor_sb/bootstrap/js/bootstrap.min.js"></script>
     <!-- Core plugin JavaScript-->
     <script src="/vendor_sb/jquery-easing/jquery.easing.min.js"></script>
     <script src="/bootstrap-select/dist/js/bootstrap-select.js"></script>
