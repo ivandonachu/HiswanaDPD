@@ -396,7 +396,7 @@ while ($data5 = mysqli_fetch_array($table5)) {
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= formatuang($total_pemasukan) ?></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        <i class="fa-solid fa-rupiah-sign"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -414,7 +414,7 @@ while ($data5 = mysqli_fetch_array($table5)) {
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><?= formatuang($total_pengeluaran) ?></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        <i class="fa-solid fa-rupiah-sign"></i>
                                         </div>
                                     </div>
                                 </div>
