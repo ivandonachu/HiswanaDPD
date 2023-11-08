@@ -239,7 +239,7 @@ if ($tanggal_awal == $tanggal_akhir) {
                                         </div>
                                     </div>
                                 </div>
-
+                                <br>
                                 <!-- Tabel -->
                                 <div style="overflow-x: auto" ;>
                                     <table align="center" id="example" class="table-sm table-striped table-bordered  nowrap" style="width:100%">
