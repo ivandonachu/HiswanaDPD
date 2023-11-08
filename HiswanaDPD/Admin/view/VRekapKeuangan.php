@@ -102,6 +102,7 @@ if ($tanggal_awal == $tanggal_akhir) {
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="VRekapKeuangan">Rekap Keuangan</a>
+                        <a class="collapse-item" href="VRekapIuranDPC">Rekap Iuran DPC</a>
                     </div>
                 </div>
             </li>
@@ -233,8 +234,8 @@ if ($tanggal_awal == $tanggal_akhir) {
                                         <!-- Button Input Data keuangan dan print  -->
                                         <div align="right">
                                        
-                                       <?php echo "<a href='VCetakKuangan?tanggal1=$tanggal_awal&tanggal2=$tanggal_akhir' target='_blank'><button style='color:black;
-                                             '  type='submit' class=' btn btn-secondary' >  <i class='fa-solid fa-print'></i>Cetak Rekap Keuangan</button></a>"; ?>
+                                       <?php echo "<a href='VCetakKuangan?tanggal1=$tanggal_awal&tanggal2=$tanggal_akhir' target='_blank'><button style='color:white;
+                                             '  type='submit' class=' btn btn-secondary' >  <i class='fa-solid fa-print'></i> Cetak Rekap Keuangan</button></a>"; ?>
 
                                             <button style="font-size: clamp(7px, 3vw, 15px); " type="button" class="btn btn-primary" data-toggle="modal" data-target="#input"> <i class="fas fa-plus-square mr-2"></i>Catat Keuangan</button> <br> <br>
                                         </div>

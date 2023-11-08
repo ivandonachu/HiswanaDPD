@@ -102,6 +102,7 @@ if ($tanggal_awal == $tanggal_akhir) {
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="VRekapKeuangan">Rekap Keuangan</a>
+                        <a class="collapse-item" href="VRekapIuranDPC">Rekap Iuran DPC</a>
                     </div>
                 </div>
             </li>

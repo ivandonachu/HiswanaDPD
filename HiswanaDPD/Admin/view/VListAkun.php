@@ -85,6 +85,7 @@ $table = mysqli_query($koneksi, "SELECT * FROM account");
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="VRekapKeuangan">Rekap Keuangan</a>
+                        <a class="collapse-item" href="VRekapIuranDPC">Rekap Iuran DPC</a>
                     </div>
                 </div>
             </li>
@@ -234,6 +235,7 @@ $table = mysqli_query($koneksi, "SELECT * FROM account");
                                                                 <label>Jabatan</label>
                                                                 <select name="jabatan" class="form-control">
                                                                     <option>Admin</option>
+                                                                    <option>Ketua</option>
                                                                 </select>
                                                             </div>
                                                         </div>

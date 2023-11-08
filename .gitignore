@@ -6,3 +6,6 @@
 /HiswanaDPD/Admin/file_admin
 /HiswanaDPD/Admin/proses/koneksi.php
 /HiswanaDPD/Admin/view/koneksi.php
+
+/HiswanaDPD/Ketua/view/koneksi.php
+/HiswanaDPD/Ketua/proses/koneksi.php
