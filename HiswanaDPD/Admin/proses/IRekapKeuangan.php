@@ -54,8 +54,6 @@ else if ( $nama_file != "" ) {
 		$tmp_name = $_FILES['file']['name'];
 
 		$ekstensi_valid = ['jpg','jpeg','pdf','doc','docs','xls','xlsx','docx','txt','png'];
-		$ekstensi_file = explode(".", $nama_file);
-		$ekstensi_file = strtolower(end($ekstensi_file));
 
 
 
