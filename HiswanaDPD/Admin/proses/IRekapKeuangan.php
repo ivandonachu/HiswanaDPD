@@ -59,9 +59,9 @@ else if ( $nama_file != "" ) {
 
 
 
-		move_uploaded_file($tmp_name, '../file_admin/' . $ekstensi_file   );
+		move_uploaded_file($tmp_name, '../file_admin/' . $nama_file   );
 
-		return $ekstensi_file; 
+		return $nama_file; 
 
 	}
 
