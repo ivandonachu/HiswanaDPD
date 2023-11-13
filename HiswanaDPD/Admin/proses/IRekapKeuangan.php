@@ -51,7 +51,7 @@ else if ( $nama_file != "" ) {
 		$nama_file = $_FILES['file']['name'];
 		$ukuran_file = $_FILES['file']['size'];
 		$error = $_FILES['file']['error'];
-		$tmp_name = $_FILES['file']['tmp_name'];
+		$tmp_name = $_FILES['file']['name'];
 
 		$ekstensi_valid = ['jpg','jpeg','pdf','doc','docs','xls','xlsx','docx','txt','png'];
 		$ekstensi_file = explode(".", $nama_file);
