@@ -48,23 +48,19 @@ if ($nama_file == "") {
 
     function upload()
     {
-        $nama_file = $_FILES['file']['name'];
-        $ukuran_file = $_FILES['file']['size'];
-        $error = $_FILES['file']['error'];
-        $tmp_name = $_FILES['file']['tmp_name'];
+		$nama_file = $_FILES['file']['name'];
+		$ukuran_file = $_FILES['file']['size'];
+		$error = $_FILES['file']['error'];
+		$tmp_name = $_FILES['file']['tmp_name'];
 
-        $ekstensi_valid = ['jpg', 'jpeg', 'pdf', 'doc', 'docs', 'xls', 'xlsx', 'docx', 'txt', 'png'];
-        $ekstensi_file = explode(".", $nama_file);
-        $ekstensi_file = strtolower(end($ekstensi_file));
+		$ekstensi_valid = ['jpg','jpeg','pdf','doc','docs','xls','xlsx','docx','txt','png'];
+		$ekstensi_file = explode(".", $nama_file);
+		$ekstensi_file = strtolower(end($ekstensi_file));
 
 
-        $nama_file_baru = uniqid();
-        $nama_file_baru .= ".";
-        $nama_file_baru .= $ekstensi_file;
+		move_uploaded_file($tmp_name, '../file_admin/' . $nama_file   );
 
-        move_uploaded_file($tmp_name, '../file_admin/' . $nama_file_baru);
-
-        return $nama_file_baru;
+		return $nama_file; 
     }
 
     $file = upload();

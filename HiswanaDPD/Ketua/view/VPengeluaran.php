@@ -269,7 +269,7 @@ if ($tanggal_awal == $tanggal_akhir) {
                                                 <td style='font-size: clamp(12px, 1vw, 12px); color: black;' >$jenis_pengeluaran</td>
                                                 <td style='font-size: clamp(12px, 1vw, 15px); color: black;' >"; ?> <?= formatuang($jumlah_pengeluaran); ?> <?php echo"</td>
                                                 <td style='font-size: clamp(12px, 1vw, 12px); color: black;' >$keterangan</td>
-                                                <td style='font-size: clamp(12px, 1vw, 15px);'>"; ?> <a download="/HiswanaDPD/Admin/file_admin/<?= $file_bukti ?>" href="/HiswanaDPD/Admin/file_admin/<?= $file_bukti ?>"> <?php echo "$file_bukti </a> </td>
+                                                <td style='font-size: clamp(12px, 1vw, 15px);'>"; ?> <a download="" href="/HiswanaDPD/Admin/file_admin/<?= $file_bukti ?>"> <?php echo "$file_bukti </a> </td>
                                                 </tr>";
                                             }
                                                 ?>
